@@ -1,0 +1,8 @@
+-
+  name: copy file to target server
+  hosts: all
+  tasks:
+    - name: Copy file
+      copy:
+        src: /home/vm1/ansiblle/somefile/afile.txt
+        dest: /tmp/bfile.txt
